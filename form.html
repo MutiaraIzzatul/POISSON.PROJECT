@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Input Data - Dashboard QC</title>
+  <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h2>QC Dashboard</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="form.html">Input Data</a>
+      <a href="results.html">Results</a>
+    </nav>
+  </header>
+
+  <!-- Konten -->
+  <main class="content">
+    <h2>Input Data Produksi Pakaian</h2>
+    <form id="inputForm">
+      <label for="date">Tanggal Produksi</label>
+      <input type="date" id="date" required>
+
+      <label for="unitTotal">Jumlah Unit Produksi</label>
+      <input type="number" id="unitTotal" required>
+
+      <label for="defectTotal">Jumlah Cacat Total</label>
+      <input type="number" id="defectTotal" required>
+
+      <label for="unitPerBatch">Unit per Batch</label>
+      <input type="number" id="unitPerBatch" required>
+
+      <label for="kValue">Nilai k (cacat per batch)</label>
+      <input type="number" id="kValue" required>
+
+      <button type="submit">Hitung & Simpan</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

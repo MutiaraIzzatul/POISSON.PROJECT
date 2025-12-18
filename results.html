@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Results - Dashboard QC</title>
+  <link rel="stylesheet" href="css/results.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h2>QC Dashboard</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="form.html">Input Data</a>
+      <a href="results.html">Results</a>
+    </nav>
+  </header>
+
+  <!-- Konten -->
+  <main class="content">
+    <h2>Hasil Statistik Produksi</h2>
+    <p>Lambda (λ): <span id="lambdaOut"></span></p>
+    <p>Probabilitas P(k): <span id="poissonOut"></span></p>
+    <p>Defect Rate: <span id="defectRateOut"></span></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Tanggal</th>
+          <th>Unit Produksi</th>
+          <th>Cacat Total</th>
+          <th>Unit per Batch</th>
+          <th>Nilai k</th>
+          <th>Lambda</th>
+          <th>P(k)</th>
+          <th>Defect Rate</th>
+        </tr>
+      </thead>
+      <tbody id="statTableBody"></tbody>
+    </table>
+
+    <button id="clearData">Hapus Semua Data Statistik</button>
+    <button id="exportExcel">Export ke Excel</button>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
